@@ -20,27 +20,26 @@
   <!-- Definiendo estilos -->
   <style>
     body {
-      background-color: #7b3270; /*en el caso de cargar imagen*/
-      background-image: url('fondo.jpg')
-    
       
-        /* imagen del body */
-      ;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    body {
+      background-color:rgb(56, 54, 54); /*la imagen puede tardar en cargar este un alternativo*/
+      background-image: url('fondo.jpg'); /* imagen del body */
       font-family: "Quicksand", sans-serif;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
+      flex: 1;
       justify-content: center;
       align-items: center;
-      margin: 0;
-
-      /*nota: estas configuraciones son para que la imagen se adapte correctamente al body*/
     }
 
+    
     /* Configuración del h2 de la barra de navegación */
     .navbar-brand {
       font-size: 25px;
@@ -96,8 +95,6 @@
     /* Configurando el footer */
     footer {
       width: 100%;
-      bottom: 0;
-    position: absolute;
       background-color: #333;
       color: white;
       text-align: center;
@@ -106,6 +103,9 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
+      position: fixed;
+      bottom: 0;
+     
     }
 
     /*contendio del footer*/
