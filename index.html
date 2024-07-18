@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="espacio, descubriendo, galaxia,mundo"> <!--para mejorar el seo, motores de busqueda-->
+  <title>Explorando la Galaxia</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Definiendo estilos -->
+  <style>
+    body {
+      background-image: url('fondo.jpg')
+        /* imagen del body */
+      ;
+      font-family: "Quicksand", sans-serif;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      /*nota: estas configuraciones son para que la imagen se adapte correctamente al body*/
+    }
+
+    /* Configuración del h2 de la barra de navegación */
+    .navbar-brand {
+      font-size: 25px;
+      text-align: center;
+      font-family: "Play", sans-serif;
+      margin-top: 15px;
+    }
+
+    /* Configurando altura */
+    .navbar {
+      height: 120px;
+    }
+
+    /* Configurando el div flotante */
+    .bienvenida {
+      background: rgba(43, 39, 39, 0.8);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 6px 8px rgba(154, 61, 135, 0.1);
+      width: 80%;
+      max-width: 600px;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 10px 50px rgb(47, 45, 45));
+      transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+      color: aliceblue;
+      font-family: "Play", sans-serif;
+      font-weight: 600;
+    }
+
+    /*generando el zoom y opacidad*/
+    .bienvenida:hover {
+      transform: scale(1.1);
+      filter: opacity(80%);
+    }
+
+    /* Configurando iconos de Bootstrap */
+    .iconos_footer {
+      font-size: 1.65em;
+      display: flex;
+      align-content: flex-end;
+      gap: 20px;
+      margin-left: 20px;
+    }
+
+    /* Configurando letras del footer */
+    .copy {
+      font-size: 1.25em;
+      text-align: center;
+      font-family: "Play", sans-serif;
+    }
+
+    /* Configurando el footer */
+    footer {
+      width: 100%;
+      bottom: 0;
+      position: fixed;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    /*contendio del footer*/
+    .footer-content {
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Página principal, presentación -->
+
+  <!-- Sección 1 -->
+  <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Navegación principal">
+    <div class="container-fluid">
+      <h2 class="navbar-brand">GALAXIA &#127761;</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <!--Nota: Los arial label es para la accesibilidad de usurio-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/el universo/galaxia.html"
+                aria-label="pagina de lectura acerca de la galaxia">Exploremos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/descubrimientos/informativa.html"
+                aria-label="Informacion relevante del espacio">Descubrimientos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Vía Láctea
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/galeria/Via_lactea.html"
+                    aria-label="imagenes de la galaxia">Galería</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/nosotros/creador.html"
+                aria-label="Creador de la pagina y la informacion sobre la pagina">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título principal + div central flotante con efecto de hover -->
+  <div class="container bienvenida" role="main">
+    <h1>Mundo Galáctico</h1>
+  </div>
+  <!-- Sección 2 -->
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3" role="contentinfo">
+    <div class="iconos_footer">
+      <!--Nota: Los link fueron sacado de boostrap para los iconos de las redes sociales-->
+      <a href="https://facebook.com" aria-label="Facebook"><i class="bi bi-facebook" style="color: rgb(219, 219, 243); "
+          aria-label="faceboock"></i></a>
+      <a href="https://github.com" aria-label="Github"><i class="bi bi-github " style="color: rgb(219, 219, 243);"
+          aria-label="github"></i></a>
+    </div>
+
+    <div class="footer-content">
+      <p class="copy">&copy; 2024 Explorando la Galaxia. Todos los derechos reservados. &hearts;</p>
+    </div>
+  </footer>
+
+  <!-- Script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
