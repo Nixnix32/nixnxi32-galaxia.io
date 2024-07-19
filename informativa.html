@@ -16,7 +16,6 @@
 
   <style>
     body {
-      font-family: "Quicksand", sans-serif;
       background-image: url("star.jpg");
       background-position: center center;
       background-repeat: no-repeat;
@@ -30,18 +29,13 @@
       margin-bottom: 40px;
       padding: 10px;
       font-weight: 400;
-      font-size: calc(1.8em + 0.5vw);
+      font-size: 2em;
       text-align: center;
       height: 60px;
       color: aliceblue;
       font-family: "Play", sans-serif;
     }
 
-    .title:hover {
-      font-size: calc(2em + 0.5vw);
-      transition: 2s ease-in-out;
-      text-shadow: 3px 2px 15px rgb(245, 212, 29);
-    }
 
     .container-fluid {
       background-image: linear-gradient(transparent, rgb(66, 62, 62), rgb(34, 31, 31));
@@ -61,7 +55,7 @@
 
     p {
       color: aliceblue;
-      font-size: 1.3em;
+      font-size: 1.1em;
       text-align: justify;
       word-spacing: 1px;
       hyphens: auto;
@@ -89,6 +83,34 @@
 
 
     }
+
+
+
+    @media (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+
+    p {
+        font-size: 1rem;
+
+    }
+  
+    .title{
+      font-size: 1.5em;
+    }
+  }
+
   </style>
 
 </head>

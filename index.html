@@ -27,7 +27,7 @@
     }
 
     body {
-      background-color:rgb(56, 54, 54); /*la imagen puede tardar en cargar este un alternativo*/
+      background-color:rgb(56, 54, 54); /*la imagen puede tardar en cargar, este un alternativo*/
       background-image: url('fondo.jpg'); /* imagen del body */
       font-family: "Quicksand", sans-serif;
       background-position: center center;
@@ -42,7 +42,7 @@
     
     /* Configuración del h2 de la barra de navegación */
     .navbar-brand {
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
       font-family: "Play", sans-serif;
       margin-top: 15px;
@@ -114,7 +114,31 @@
       align-items: stretch;
       flex-wrap: wrap;
       margin-top: 15px;
+      font-size: 1em;
     }
+
+
+    @media (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
   </style>
 </head>
 
@@ -122,12 +146,14 @@
   <!-- Página principal, presentación -->
 
   <!-- Sección 1 -->
+
+  <!--usando clases de boostrap-->
   <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Navegación principal">
     <div class="container-fluid">
       <h2 class="navbar-brand">GALAXIA &#127761;</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar">
-        <!--Nota: Los arial label es para la accesibilidad de usurio-->
+        <!--Nota: Los arial label es para la accesibilidad de usurio, a la hora de usar un lector dez-->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
